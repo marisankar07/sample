@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crop Yield Prediction</title>
+  <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Crop Yield Prediction</h1>
+    </div>
+  <form>
+    <label for="state-name">State Name</label>
+    <select name="state" id="state" class="select">
+      <option value="tn">TamilNadu</option>
+    </select><br>
+  </form>
+  <form>
+    <label for="district-name">District Name</label>
+    <select name="district" id="district" class="select">
+      <option value="tvl">Tirunelveli</option>
+      <option value="mas">Chennai</option>
+      <option value="tut">Tuticorin</option>
+    </select><br>
+  </form>
+  <form>
+    <label for="season-type">Season Type</label>
+    <select name="season" id="season" class="select">
+      <option value="hot">Summer</option>
+      <option value="at">Autumn</option>
+      <option value="rn">Rainfall</option>
+    </select><br>
+  </form>
+  <form>
+    <label for="crop-type">Crop Type</label>
+    <select id="crop-type" name="crop-type" class="select">
+      <option value="corn">Corn</option>
+      <option value="wheat">Wheat</option>
+      <option value="soybeans">Soybeans</option>
+    </select><br>
+  </form>
+  <form>
+    <label for="soil-type">Soil Type</label>
+      <select id="soil-type" name="soil-type" class="select">
+        <option value="corn">Loamy</option>
+        <option value="wheat">Clay</option>
+        <option value="soybeans">Sandy</option>
+      </select><br>
+  </form>
+  <div class="a">
+    <label for="crop-year">Crop Year</label>
+    <input type="number" id="year" name="year" min="1900" max="2022" placeholder="yyyy"><br>
+    <label for="arae">Area</label>
+    <input type="number" id="area" name="area" placeholder="Area"><br>
+    <label for="temp">Temperature</label>
+    <input type="number" id="temp" name="temp" placeholder="Temperature"><br>
+    <label for="wind speed">Wind Speed</label>
+    <input type="number" id="wind-speed" name="wind-speed" placeholder="Wind Speed"><br>
+    <label for="preasure">Preasure</label>
+    <input type="number" id="preasure" name="preasure" placeholder="Preasure"><br>
+    <label for="humidity">Humidity</label>
+    <input type="number" id="humidity" name="humidity" placeholder="Humidity"><br>
+    <label for="nitrogen">Nitrogen</label>
+    <input type="number" id="nitrogen" name="nitrogen" placeholder="Nitrogen"><br>
+    <label for="phosphorus">Phosphorus</label>
+    <input type="number" id="phosphorus" name="phosphorus" placeholder="Phosphorus"><br>
+    <label for="potassium">Potassium</label>
+    <input type="number" id="potassium" name="potassium" placeholder="Potassium"><br>
+    <input type="button" value="Predict" onclick="predict()">
+  </div>
+  <div id="result"></div>
+  <script src="js.js"></script>
+</body>
+</html>
